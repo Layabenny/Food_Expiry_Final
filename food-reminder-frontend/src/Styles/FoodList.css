@@ -1,0 +1,104 @@
+.food-list {
+  margin-top: 20px;
+}
+
+.food-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: white;
+  outline: none;
+  width: 200px;
+}
+
+.search-bar::placeholder {
+  color: #94a3b8;
+}
+
+.food-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.food-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: 0.3s ease;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+tr.fresh { color: #11d559; }   /* green */
+tr.near { color: #f97316; }    /* orange */
+tr.expired { color: #ef4444; } /* red */
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-weight: bold;
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #222;
+  border-radius: 8px;
+  padding: 6px 10px;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-container:focus-within {
+  box-shadow: 0 0 10px #00e676; /* glow when active */
+}
+
+.search-icon {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #aaa;
+  animation: pulse 1.5s infinite;
+}
+
+.search-bar {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+}
+
+.search-bar::placeholder {
+  color: #888;
+}
+
+/* 🔹 Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: #aaa;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #00e676;
+  }
+  100% {
+    transform: scale(1);
+    color: #aaa;
+  }
+}

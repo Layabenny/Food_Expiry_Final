@@ -1,0 +1,12 @@
+.dashboard {
+  background: #2a3140;
+  min-height: 100vh;
+  color: rgb(224, 217, 217);
+  padding: 2rem;
+  font-family: 'Poppins';
+}
+
+.brand {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}

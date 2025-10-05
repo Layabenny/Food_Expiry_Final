@@ -1,0 +1,9 @@
+.notifications {
+  margin-top: 20px;
+  background: #1e293b;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.notifications p.expired { color: #ef4444; }
+.notifications p.near { color: #f97316; }
